@@ -239,7 +239,7 @@ namespace ariel{
     // checking if g1 is subgraph of g2;
     for (size_t i = 0; i < g1.getNumVertices(); i++){
         for (size_t j = 0; j < g1.getNumVertices(); j++){
-            if(matrix1[i][j] && matrix2[i][j]){
+            if(matrix1[i][j] && matrix2[i][j]==0){
         return false;
         }
     }
