@@ -230,7 +230,7 @@ namespace ariel{
    }
 
    bool Graph::isSubGraph(Graph& g1 , Graph& g2){
-    //g1 cant be subgraph is g1 bigger then g2;
+    //g1 cant be subgraph if g1 bigger then g2;
     if(g1.getNumVertices() > g2.getNumVertices()){
         return false;
     }
@@ -239,7 +239,7 @@ namespace ariel{
     // checking if g1 is subgraph of g2;
     for (size_t i = 0; i < g1.getNumVertices(); i++){
         for (size_t j = 0; j < g1.getNumVertices(); j++){
-            if(matrix1[i][j] && matrix2[i][j] != matrix1[i][j]){
+            if(matrix1[i][j] && matrix2[i][j]){
         return false;
         }
     }
